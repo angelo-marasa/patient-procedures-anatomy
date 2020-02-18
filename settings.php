@@ -4,7 +4,7 @@ add_action('admin_menu', 'kal_patient_procedures_anatomy_create_menu');
 
 function kal_patient_procedures_anatomy_create_menu() {
 //--create new top-level menu
-    add_menu_page('Patient Procedures Anatomy', 'Patient Procedures Anatomy', 'administrator', __FILE__, 'kal_patient_procedures_anatomy_settings_page' ,  plugins_url('/images/icon.svg', __FILE__) );
+    add_menu_page('Patient Procedures Anatomy Settings', 'Patient Procedures Anatomy Settings', 'administrator', __FILE__, 'kal_patient_procedures_anatomy_settings_page' ,  plugins_url('/images/icon.svg', __FILE__) );
 //--call register settings function
     add_action( 'admin_init', 'register_patient_procedures_anatomy_settings' );
 }
